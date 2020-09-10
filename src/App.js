@@ -1,8 +1,15 @@
 import React from 'react';
 
-function App() {
+import List from './components/list';
+
+const App = () => {
   return (
-    <h1>react-app</h1>
+    <div className="todo">
+      <div className="todo__sidebar">
+          <List />
+      </div>
+      <div className="todo__tasks"></div>
+    </div>
   );
 }
 
