@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 
 import List from './components/List';
-import AddButtonList from './components/AddList';
+import AddList from './components/AddList';
+
+import db from './assets/db.json';
 
 const App = () => {
   // let [value, setValue] = useState("state-start");
@@ -34,7 +36,7 @@ const App = () => {
           },
         ]}
         isRemovable={true} />
-        <AddButtonList />
+        <AddList colors={db.colors}/>
       </div>
     </div>
   );
